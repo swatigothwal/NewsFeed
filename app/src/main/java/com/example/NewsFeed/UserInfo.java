@@ -1,7 +1,11 @@
 package com.example.NewsFeed;
 
+import java.util.ArrayList;
+
 public class UserInfo {
     private String name,email,college,codechef,codeforces,hackerrank;
+    private ArrayList<String> title;
+    private  ArrayList<String> description;
 
     UserInfo()
     {
@@ -21,7 +25,22 @@ public class UserInfo {
         return email;
     }
 
+    public ArrayList<String> getTitle() {
+        return title;
+    }
 
+    public ArrayList<String> getDescription() {
+        return description;
+    }
+
+    public  void addTitle(String ti){
+        title.add(ti);
+        return;
+    }
+
+    public void  addDescription(String des){
+        description.add(des);
+    }
     public void setName(String name) {
         this.name = name;
     }

@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_login);
+            setContentView(R.layout.activity_main);
 
             ComponentName name = new ComponentName(this, SimpleService.class);
             JobInfo info = new JobInfo.Builder(123, name)
@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onItemClick(AdapterView parent, View view, int position, long id) {
                     Log.d("IT472", " clicked news " + position);
+
                     String url = rssItemList.get(position).getLink();
                     try {
                         Uri uri = Uri.parse("googlechrome://navigate?url=" + url);

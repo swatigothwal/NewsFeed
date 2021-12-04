@@ -13,8 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsFeed">
+        <activity android:name="com.example.NewsFeed.Register" />
+        <activity android:name="com.example.NewsFeed.MainActivity" />
+        <activity android:name="com.example.NewsFeed.notification" />
         <activity
-            android:name="com.example.NewsFeed.MainActivity"
+            android:name="com.example.NewsFeed.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
